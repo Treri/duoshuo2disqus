@@ -21,6 +21,10 @@ if (!/^\//.test(exportFile)) {
   resolvedExportFile = exportFile;
 }
 
+if(!fs.existsSync(resolvedExportFile)){
+  console.error('missing resolved export file');
+}
+
 console.log('start migrate export file:', resolvedExportFile);
 
 getDisqusWxr(resolvedExportFile);
