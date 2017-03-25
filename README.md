@@ -12,5 +12,8 @@ node duoshuo2disqus.js
 
 then `disqus.xml` will be created
 
+#### Related
+- [Disqus Custom XML Import Format](https://help.disqus.com/customer/portal/articles/472150-custom-xml-import-format)
+
 #### License
 MIT
