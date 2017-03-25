@@ -1,0 +1,27 @@
+{
+  "name": "duoshuo2disqus",
+  "version": "1.0.0",
+  "description": "migrate duoshuo export file to disqus wxr file format",
+  "main": "duoshuo2disqus.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Treri/duoshuo2disqus.git"
+  },
+  "keywords": [
+    "duoshuo",
+    "disqus",
+    "wxr"
+  ],
+  "author": "Treri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Treri/duoshuo2disqus/issues"
+  },
+  "homepage": "https://github.com/Treri/duoshuo2disqus#readme",
+  "dependencies": {
+    "gravatar": "^1.6.0"
+  }
+}
