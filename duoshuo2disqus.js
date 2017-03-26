@@ -3,8 +3,6 @@
 var fs = require('fs');
 var path = require('path');
 
-var gravatar = require('gravatar');
-
 var exportFile = process.argv[2];
 
 exportFile = 'export.json';
@@ -120,12 +118,12 @@ function getDisqusWxr(exportFile) {
     return `
       <wp:comment>
         <!-- sso only; see docs -->
-        <dsq:remote>
+        <!-- <dsq:remote> -->
           <!-- unique internal identifier; username, user id, etc. -->
           <!-- <dsq:id>user id</dsq:id> -->
           <!-- avatar -->
-          <dsq:avatar>${getCommentAvatar(comment)}</dsq:avatar>
-        </dsq:remote>
+          <!-- <dsq:avatar>http://url.to/avatar.png</dsq:avatar> -->
+        <!-- </dsq:remote> -->
         <!-- internal id of comment -->
         <wp:comment_id>${comment.post_id}</wp:comment_id>
         <!-- author display name -->
@@ -147,17 +145,6 @@ function getDisqusWxr(exportFile) {
       </wp:comment>
   `;
   }
-
-  function getCommentAvatar(comment){
-    if(!comment.author_email){
-      return '';
-    }
-
-    return 'http:' + gravatar.url(comment.author_email, {
-      size: 100
-    });
-  }
-
 
   function getCommentParent(parents) {
     if (!parents) {

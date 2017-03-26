@@ -21,7 +21,5 @@
     "url": "https://github.com/Treri/duoshuo2disqus/issues"
   },
   "homepage": "https://github.com/Treri/duoshuo2disqus#readme",
-  "dependencies": {
-    "gravatar": "^1.6.0"
-  }
+  "dependencies": {}
 }
